@@ -1,0 +1,4 @@
+<Window x:Class="SP_RezervaceZasedacichMistnosti.Views.CiselnikView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="850" Height="540" WindowStartupLocation="CenterOwner">
+<DockPanel Margin="18"><TextBlock x:Name="Heading" DockPanel.Dock="Top" FontSize="24"/>
+<StackPanel DockPanel.Dock="Bottom"><WrapPanel><Button Content="Přidat řádek" Click="Pridat"/><Button Content="Smazat vybraný" Click="Smazat"/><Button Content="Uložit změny" Click="Ulozit"/><Button Content="Zavřít" Click="Zavrit"/></WrapPanel><TextBlock Text="Údaje upravujte v tabulce. Záznam s rezervací včetně historie nelze smazat." TextWrapping="Wrap"/></StackPanel>
+<DataGrid x:Name="Grid"/></DockPanel></Window>

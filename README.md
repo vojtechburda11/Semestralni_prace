@@ -38,4 +38,3 @@ dotnet test Tests/Tests.csproj
 Testy nad SQLite ověřují aplikační pravidla, FK a dostupnost. Testy syntaxe přes Microsoft ScriptDom ověřují všechny SQL skripty včetně dynamického těla triggeru. Volitelné SQL Server testy ověřují skutečné migrace, trigger a souběžné přímé SQL zápisy. Pro jejich spuštění nastavte `REZERVACE_TEST_CONNECTION_STRING` na testovací SQL Server; účet musí smět vytvářet a odstraňovat testovací databáze. Každý test vytváří vlastní databázi s náhodným názvem. Bez proměnné jsou tyto testy přeskočené.
 
 WPF se spouští pouze ve Windows. Na Linuxu je možné projekt sestavit díky `EnableWindowsTargeting`, ale nelze tam ověřit běh GUI ani LocalDB. Testování nad SQLite nenahrazuje ověření souběhu a triggerů na SQL Serveru.
-

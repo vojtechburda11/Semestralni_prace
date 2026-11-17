@@ -1,0 +1,9 @@
+<Window x:Class="SP_RezervaceZasedacichMistnosti.Views.RezervaceEditView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Přidání / změna rezervace" Width="760" Height="520" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+<StackPanel Margin="18"><TextBlock Text="Termín a požadovaná kapacita" FontSize="21"/><TextBlock Text="{Binding Napoveda}" TextWrapping="Wrap"/>
+<WrapPanel><TextBlock Text="Od:"/><TextBox Width="190" Text="{Binding Od, UpdateSourceTrigger=PropertyChanged}"/><TextBlock Text="Do:"/><TextBox Width="190" Text="{Binding Do, UpdateSourceTrigger=PropertyChanged}"/></WrapPanel>
+<WrapPanel><TextBlock Text="Min. kapacita:"/><TextBox Width="70" Text="{Binding Kapacita, UpdateSourceTrigger=PropertyChanged}"/><Button Content="Vyhledat dostupné místnosti" Command="{Binding HledatCommand}"/></WrapPanel>
+<TextBlock Text="Dostupná místnost (seřazeno podle kapacity):"/><ComboBox ItemsSource="{Binding Dostupne}" SelectedItem="{Binding Mistnost}"/>
+<TextBlock Text="Zaměstnanec:"/><ComboBox ItemsSource="{Binding Zamestnanci}" SelectedItem="{Binding Zamestnanec}"/>
+<TextBlock Text="Účel rezervace (povinný):"/><TextBox Text="{Binding Ucel, UpdateSourceTrigger=PropertyChanged}" MaxLength="500" Height="65" AcceptsReturn="True" TextWrapping="Wrap"/>
+<WrapPanel HorizontalAlignment="Right"><Button Content="Uložit rezervaci" Command="{Binding UlozitCommand}"/><Button Content="Zavřít" IsCancel="True"/></WrapPanel>
+</StackPanel></Window>

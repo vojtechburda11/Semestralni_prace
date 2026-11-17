@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DataEntity/DataEntity.csproj" Id="4c9817db-2b96-4ac9-8b55-588e91665479" />
+  <Project Path="SP_RezervaceZasedacichMistnosti/SP_RezervaceZasedacichMistnosti.csproj" />
+  <Project Path="Tests/Tests.csproj" />
+</Solution>
